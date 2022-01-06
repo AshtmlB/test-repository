@@ -1,0 +1,115 @@
+$maxSiteWidth: 1221px;
+$siteGutterWidth: 102px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 52px;
+    margin: 0px;
+}
+
+h3,p {
+    font-size: 18;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.hero {
+    display:flex;
+}
+
+.hero-title {
+    flex: 45%;
+    padding: 89px 0;
+}
+.hero-picture {
+    flex: 55%;
+}
+
+.container {
+    margin: 0 auto; 
+    max-width: $maxSiteWidth + ($siteGutterWidth * 2);
+    padding: 0 $siteGutterWidth;
+}
+
+.container-nav {
+    margin: 0 auto; 
+    max-width: $maxSiteWidth + ($siteGutterWidth * 2);
+    padding: 0 $siteGutterWidth;
+    position: sticky;
+    top: 0;
+    
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 0px;
+
+    background: rgba(255, 255,255, 0.75);
+    color: #BDBDBD;
+    border-top: solid;
+    border-bottom: solid;
+    //box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+    display: block;
+    flex: 0 1 auto;
+    padding: 1rem;
+
+    color: #005F9B;
+    text-decoration: none;
+    transition: all 0.75s ease;
+    font-weight: 400;
+    &:hover {
+        background: #BDBDBD;
+        color:white;
+    }
+}
+
+.home-link {
+    display: block;
+    flex: 0 1 auto;
+    padding: 1rem 2rem;
+
+    color: #005F9B;
+    text-decoration: none;
+    transition: all 0.75s ease;
+    font-weight: 400;
+    &:hover {
+        background: #BDBDBD;
+        color:white;
+        letter-spacing: .4rem;
+    }
+}
+
+.day{
+    margin: 100px 0 200px 0;
+    padding:100px 0;
+}
+
+.footer{
+    background:#005F9B;
+    color:white;
+    height: 450px;
+    padding: 100px;
+}
