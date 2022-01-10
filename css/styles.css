@@ -13,34 +13,84 @@ ul {
 }
 
 h1 {
-  font-weight: 200;
-  font-size: 52px;
+  font-weight: 100;
+  font-size: 4vw;
   margin: 0px;
 }
 
 h3, p {
-  font-size: 18;
+  font-size: 1.0vw;
   font-weight: 300;
-  margin: 30px 0;
+  margin: 3vw 0;
+  width: 50vw;
+}
+
+h4 {
+  font-size: 1.0vw;
+  font-weight: 300;
 }
 
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8% 0;
+}
+
+@media screen and (max-width: 937px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .hero .hero-title {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 8vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero h3 {
+    font-size: 2.0vw;
+    font-weight: 300;
+    margin: 3vw 0;
+    width: 50vw;
+  }
 }
 
 .hero-title {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  padding: 89px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 45%;
 }
 
 .hero-picture {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #005F9B;
+  border-radius: 50%;
+}
+
+.log-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45vw;
+}
+
+.img-caption {
+  text-align: center;
 }
 
 .container {
@@ -68,9 +118,9 @@ h3, p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   width: 100%;
   margin: 0;
   padding: 0 0px;
@@ -118,14 +168,25 @@ h3, p {
 }
 
 .day {
-  margin: 100px 0 200px 0;
-  padding: 100px 0;
+  margin-top: 10vw;
+  padding-top: 3vw;
 }
 
-.footer {
-  background: #005F9B;
-  color: white;
-  height: 450px;
-  padding: 100px;
+@media screen and (max-width: 937px) {
+  .day h1 {
+    font-size: 8vw;
+  }
+  .day h3 {
+    margin: 3vw 0;
+    width: 100%;
+  }
+  .day h4, .day h3 {
+    font-size: 2.0vw;
+    font-weight: 300;
+  }
+}
+
+.caption {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
