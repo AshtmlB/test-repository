@@ -18,7 +18,7 @@ ul {
 
 h1 {
     font-weight: 100;
-    font-size: 4vw;
+    font-size: clamp(3rem, 4vw, 6rem);
     margin: 0px;
 }
 
@@ -42,33 +42,19 @@ h4 {
         //display: block;
         flex-direction: column-reverse;
         align-items: stretch;
-        .hero-title {
-            width: 100%;
-        }
-        h1 {
-            font-size: 8vw;
-            align-items: center;
-        }
-        h3 {
-            font-size: 2.0vw;
-            font-weight: 300;
-            margin: 3vw 0;
-            width: 50vw;
-        }
         
     }
 }
 
 .hero-title {
     flex: 1;
-    width: 45%;
+    //width: 45%;
 }
 .hero-picture {
     flex: 1;
-    //background: #D4E9FF;
     background: #005F9B;
     border-radius: 50%;
-    //width: 55%;
+    max-width: 400px;
 }
 
 .log-image {

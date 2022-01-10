@@ -14,7 +14,7 @@ ul {
 
 h1 {
   font-weight: 100;
-  font-size: 4vw;
+  font-size: clamp(3rem, 4vw, 6rem);
   margin: 0px;
 }
 
@@ -50,28 +50,12 @@ h4 {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .hero .hero-title {
-    width: 100%;
-  }
-  .hero h1 {
-    font-size: 8vw;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero h3 {
-    font-size: 2.0vw;
-    font-weight: 300;
-    margin: 3vw 0;
-    width: 50vw;
-  }
 }
 
 .hero-title {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 45%;
 }
 
 .hero-picture {
@@ -80,6 +64,7 @@ h4 {
           flex: 1;
   background: #005F9B;
   border-radius: 50%;
+  max-width: 400px;
 }
 
 .log-image {
