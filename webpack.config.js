@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = "style-loader";
 
 const config = {
-  entry: ["./src/index.js", "./src/styles.scss"],
+  entry: ["./src/js/index.js", "./src/sass/index.scss"],
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -19,7 +19,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html",
+      template: "src/html/index.html",
     }),
     new CopyPlugin({
       patterns: [
