@@ -1,5 +1,29 @@
-.header-hero {
-    a {
-        color: green;
+[data-module="hero"] {
+    .hero-container {
+        display:flex;
+        align-items: center;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        @media screen and (max-width: 937px) {
+            flex-direction: column-reverse;
+            align-items: stretch;       
+        }
+    }
+
+    .hero-flex-item {
+        flex: 0 1 auto;
+        &:last-child {
+            flex-basis: 55%;
+        }
+    }
+    
+    .hero-picture {
+        background: #005F9B;
+        border-radius: 50%;
+        max-width: 400px;
+        margin: 0 auto 10%;
+        > img {
+            width: 100%;
+        }
     }
 }

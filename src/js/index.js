@@ -25,7 +25,7 @@ ready(() => {
             buttonClicked = true;
 
             setTimeout(() => {
-                buttonClicked = false;
+                buttonClicked = true;
             }, 500);
         });
     });
@@ -40,7 +40,6 @@ ready(() => {
         navEls.forEach((navEl, index) => {
 
             const hrefElHashValue = navEl.querySelector('a').getAttribute('href').replace('#', '');
-            
             // add or remove active class based on matching scrolled-to log entry
             if (hrefElHashValue == entryId) {
                navEl.classList.add(ACTIVE_CLASS); 
@@ -55,16 +54,15 @@ ready(() => {
 
     scrollEls.forEach(item => {
         observer.observe(item);
-    })
+    });
 
 });
 
 const getScrollPostion = (totalWidth, itemWidth, index, total) => {
- console.log(totalWidth, itemWidth, index, total)
- 
+
     const middleValue = totalWidth / 2;
     const currentPosition = (index * itemWidth) + (itemWidth / 2);
-   // console.log(currentPosition, middleValue)
+    
     if (currentPosition <= middleValue) return 0;
 
     return currentPosition - middleValue;
