@@ -1,5 +1,31 @@
 .navigation {
-    a {
-        color: green;
+    &.container-nav {
+        @media (max-width: 900px) {
+            padding: 0;
+            .nav-links {
+                flex-wrap: nowrap;
+                overflow-y: auto;
+                &::-webkit-scrollbar { 
+                    width: 0 !important; 
+                    height: 0 !important 
+                }
+            
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-height: none;  /* Firefox */
+
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+            }
+        }
+
+        .active {
+            background: yellow;
+        }
+        
+        a {
+            color: green;
+            white-space: nowrap;
+        }
     }
+    
 }
