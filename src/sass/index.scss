@@ -3,7 +3,7 @@ $siteGutterWidth: 102px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-@import 'header-hero', 'log-entry', 'navigation';
+@import 'header-hero', 'log-entry', 'navigation','footer';
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -12,6 +12,7 @@ html {
 
 body {
     margin: 0;
+    line-height: 1.5;
 }
 
 ul {
@@ -20,19 +21,21 @@ ul {
 
 h1 {
     font-weight: 100;
-    font-size: clamp(3rem, 4vw, 6rem);
+    font-size: clamp(30px, 6vw, 120px);
     margin: 0px;
+    color: #0F2F3E;
 }
 
 h3,p {
-    font-size: 1.0vw;
+    font-size: clamp(20px, 1.0vw,300px);
     font-weight: 300;
-    margin: 3vw 0;
+    margin: 3vw;
+    margin-left: 0;
     width: 50vw;
 }
 
 h4 {
-    font-size: 1.0vw;
+    font-size: clamp(20px, 1.0vw,300px);
     font-weight: 300;
 }
 
@@ -49,10 +52,11 @@ h4 {
 }
 
 .container {
-    margin: 0 auto; 
+    margin: auto; 
     max-width: $maxSiteWidth + ($siteGutterWidth * 2);
-    padding: 0 $siteGutterWidth;
+    padding: 0 clamp(40px,80vw,$siteGutterWidth);
 }
+
 
 .container-nav {
     margin: 0 auto; 
@@ -62,6 +66,7 @@ h4 {
     top: 0;
     
 }
+
 
 .nav-links {
     display: flex;
@@ -84,16 +89,16 @@ h4 {
     flex: 0 1 auto;
     padding: 1rem;
 
-    color: #005F9B;
+    color: #0F2F3E;
     text-decoration: none;
     transition: all 0.75s ease;
     font-weight: 400;
     &:hover {
-        background: #BDBDBD;
+        background: #EC6571;
         color:white;
     }
 }
- 
+/*
 .home-link {
     display: block;
     flex: 0 1 auto;
@@ -108,7 +113,7 @@ h4 {
         color:white;
         letter-spacing: .4rem;
     }
-}
+}*/
 .day{
     padding-top: 13vw;
     @media screen and (max-width: 937px) {

@@ -1,4 +1,6 @@
 .navigation {
+    
+    
     &.container-nav {
         @media (max-width: 900px) {
             padding: 0;
@@ -11,7 +13,7 @@
                 }
             
                 -ms-overflow-style: none;  /* IE and Edge */
-                scrollbar-height: none;  /* Firefox */
+                //scrollbar-height: none;  /* Firefox */
 
                 scroll-snap-type: x mandatory;
                 scroll-behavior: smooth;
@@ -19,11 +21,10 @@
         }
 
         .active {
-            background: yellow;
+            background: #FBC1C2;
         }
         
         a {
-            color: green;
             white-space: nowrap;
         }
     }
