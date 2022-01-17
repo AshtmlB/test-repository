@@ -5,8 +5,9 @@ const ready = require('document-ready');
 const ACTIVE_CLASS = 'active';
 const INTERSECTION_OBSERVER_OPTIONS = {
     rootMargin: '0px',
-    threshold: 0.9
+    threshold: [0.5]
 }
+
 // wait for DOM to be ready
 ready(() => {
     
@@ -32,7 +33,7 @@ ready(() => {
 
 
     const callback = (entries, observer) => {
-        
+
         const entryId = entries[0].target.id || '';
         const totalWidth = navContainerEl.innerWidth || navContainerEl.clientWidth;
 
