@@ -33,8 +33,6 @@ ready(() => {
 
 
     const callback = (entries, observer) => {
-        
-console.log(entries);
 
         const entryId = entries[0].target.id || '';
         const totalWidth = navContainerEl.innerWidth || navContainerEl.clientWidth;
